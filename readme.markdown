@@ -4,7 +4,7 @@ Return a through stream that starts out paused and resumes on the next tick,
 unless somebody called `.pause()`.
 
 This module has the same signature as
-[through](https://npmjs.com/package/through).
+[through](https://npmjs.org/package/through).
 
 [![browser support](https://ci.testling.com/substack/resumer.png)](http://ci.testling.com/substack/resumer)
 
@@ -44,7 +44,7 @@ The stream starts out paused and will be resumed on the next tick unless you
 call `.pause()` first.
 
 `write` and `end` get passed directly through to
-[through](https://npmjs.com/package/through).
+[through](https://npmjs.org/package/through).
 
 # install
 
