@@ -11,7 +11,7 @@ test('through write/end', function (t) {
         t.ok(true);
     });
     
-    s.pipe(concat(function (err, body) {
+    s.pipe(concat(function (body) {
         t.equal(body, 'BEGIN\nRAWR\nEND\n');
     }));
     
