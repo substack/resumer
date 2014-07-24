@@ -6,7 +6,7 @@ test('implicit resume', function (t) {
     t.plan(1);
     
     var s = createStream();
-    s.pipe(concat(function (err, body) {
+    s.pipe(concat(function (body) {
         t.equal(body, 'beep boop\n');
     }));
 });
@@ -23,7 +23,7 @@ test('pause/resume', function (t) {
         s.resume();
     }, 100);
     
-    s.pipe(concat(function (err, body) {
+    s.pipe(concat(function (body) {
         t.equal(paused, false);
         t.equal(body, 'beep boop\n');
     }));
