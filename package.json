@@ -3,6 +3,7 @@
     "version": "0.0.0",
     "description": "a through stream that starts paused and resumes on the next tick",
     "main": "index.js",
+    "types": "./types.d.ts",
     "dependencies": {
         "through": "~2.3.4"
     },
